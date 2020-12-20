@@ -1,0 +1,33 @@
+ .grid {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 2fr ;
+} 
+
+.grid div {
+    background: #555555;
+    border-radius: 4px;
+    height: 70px;
+}
+.grid div:nth-child(1) {
+    grid-column-end:-1;
+    grid-column-start: 1;
+}
+.grid div.item {
+    background: #228844;
+    border-radius: 4px;
+    height: 70px;
+}
+
+.grid div:nth-child(4) {
+    grid-column-end:-1;
+    grid-column-start: 1;
+}
+
+.grid div:nth-child(2) {
+    height: 500px;
+}
+
+.grid div:nth-child(3) {
+    height: 500px;
+}
